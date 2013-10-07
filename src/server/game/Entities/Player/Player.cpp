@@ -24764,10 +24764,6 @@ void Player::HandleFall(MovementInfo const& movementInfo)
                 if (damage > GetMaxHealth())
                     damage = GetMaxHealth();
 
-                // Gust of Wind
-                if (HasAura(43621))
-                    damage = GetMaxHealth()/2;
-
                 uint32 original_health = GetHealth();
                 uint32 final_damage = EnvironmentalDamage(DAMAGE_FALL, damage);
 

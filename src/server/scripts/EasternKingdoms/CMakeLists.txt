@@ -108,10 +108,6 @@ set(scripts_STAT_SRCS
   EasternKingdoms/Gnomeregan/gnomeregan.h
   EasternKingdoms/zone_redridge_mountains.cpp
   EasternKingdoms/zone_ironforge.cpp
-  EasternKingdoms/ScarletEnclave/chapter2.cpp
-  EasternKingdoms/ScarletEnclave/chapter5.cpp
-  EasternKingdoms/ScarletEnclave/chapter1.cpp
-  EasternKingdoms/ScarletEnclave/zone_the_scarlet_enclave.cpp
   EasternKingdoms/zone_eastern_plaguelands.cpp
   EasternKingdoms/Stratholme/boss_baroness_anastari.cpp
   EasternKingdoms/Stratholme/boss_nerubenkan.cpp
@@ -171,15 +167,6 @@ set(scripts_STAT_SRCS
   EasternKingdoms/zone_burning_steppes.cpp
   EasternKingdoms/zone_blasted_lands.cpp
   EasternKingdoms/zone_stormwind_city.cpp
-  EasternKingdoms/ZulAman/boss_halazzi.cpp
-  EasternKingdoms/ZulAman/boss_hexlord.cpp
-  EasternKingdoms/ZulAman/boss_zuljin.cpp
-  EasternKingdoms/ZulAman/boss_akilzon.cpp
-  EasternKingdoms/ZulAman/instance_zulaman.cpp
-  EasternKingdoms/ZulAman/boss_janalai.cpp
-  EasternKingdoms/ZulAman/boss_nalorakk.cpp
-  EasternKingdoms/ZulAman/zulaman.cpp
-  EasternKingdoms/ZulAman/zulaman.h
   EasternKingdoms/zone_hinterlands.cpp
   EasternKingdoms/zone_western_plaguelands.cpp
   EasternKingdoms/zone_alterac_mountains.cpp

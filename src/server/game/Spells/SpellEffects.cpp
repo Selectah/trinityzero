@@ -1030,7 +1030,6 @@ void Spell::EffectForceCast(SpellEffIndex effIndex)
             case 48598: // Ride Flamebringer Cue
                 unitTarget->RemoveAura(damage);
                 break;
-            case 52463: // Hide In Mine Car
             case 52349: // Overtake
                 unitTarget->CastCustomSpell(unitTarget, spellInfo->Id, &damage, NULL, NULL, true, NULL, NULL, m_originalCasterGUID);
                 return;
@@ -3830,43 +3829,6 @@ void Spell::EffectScriptEffect(SpellEffIndex effIndex)
                     sprintf(buf, "%s causually tosses %s [Worn Troll Dice]. One %u and one %u.", m_caster->GetName().c_str(), gender, urand(1, 6), urand(1, 6));
                     m_caster->MonsterTextEmote(buf, 0);
                     break;
-                }
-                // Death Knight Initiate Visual
-                case 51519:
-                {
-                    if (!unitTarget || unitTarget->GetTypeId() != TYPEID_UNIT)
-                        return;
-
-                    uint32 iTmpSpellId = 0;
-                    switch (unitTarget->GetDisplayId())
-                    {
-                        case 25369: iTmpSpellId = 51552; break; // bloodelf female
-                        case 25373: iTmpSpellId = 51551; break; // bloodelf male
-                        case 25363: iTmpSpellId = 51542; break; // draenei female
-                        case 25357: iTmpSpellId = 51541; break; // draenei male
-                        case 25361: iTmpSpellId = 51537; break; // dwarf female
-                        case 25356: iTmpSpellId = 51538; break; // dwarf male
-                        case 25372: iTmpSpellId = 51550; break; // forsaken female
-                        case 25367: iTmpSpellId = 51549; break; // forsaken male
-                        case 25362: iTmpSpellId = 51540; break; // gnome female
-                        case 25359: iTmpSpellId = 51539; break; // gnome male
-                        case 25355: iTmpSpellId = 51534; break; // human female
-                        case 25354: iTmpSpellId = 51520; break; // human male
-                        case 25360: iTmpSpellId = 51536; break; // nightelf female
-                        case 25358: iTmpSpellId = 51535; break; // nightelf male
-                        case 25368: iTmpSpellId = 51544; break; // orc female
-                        case 25364: iTmpSpellId = 51543; break; // orc male
-                        case 25371: iTmpSpellId = 51548; break; // tauren female
-                        case 25366: iTmpSpellId = 51547; break; // tauren male
-                        case 25370: iTmpSpellId = 51545; break; // troll female
-                        case 25365: iTmpSpellId = 51546; break; // troll male
-                        default: return;
-                    }
-
-                    unitTarget->CastSpell(unitTarget, iTmpSpellId, true);
-                    Creature* npc = unitTarget->ToCreature();
-                    npc->LoadEquipment();
-                    return;
                 }
                 // Deathbolt from Thalgran Blightbringer
                 // reflected by Freya's Ward

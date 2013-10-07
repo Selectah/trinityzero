@@ -5772,7 +5772,7 @@ void AuraEffect::HandlePeriodicDamageAurasTick(Unit* target, Unit* caster) const
     {
         switch (GetSpellInfo()->Id)
         {
-            case 43093: case 31956: case 38801:  // Grievous Wound
+            case 31956: case 38801:  // Grievous Wound
             case 35321: case 38363: case 39215:  // Gushing Wound
                 if (target->IsFullHealth())
                 {
@@ -6351,9 +6351,6 @@ void AuraEffect::HandleRaidProcFromChargeAuraProc(AuraApplication* aurApp, ProcE
             break;
         case 59978:            // Shiver
             triggerSpellId = 59979;
-            break;
-        case 43593:            // Cold Stare
-            triggerSpellId = 43594;
             break;
         default:
             TC_LOG_DEBUG(LOG_FILTER_SPELLS_AURAS, "AuraEffect::HandleRaidProcFromChargeAuraProc: received not handled spell: %u", GetId());

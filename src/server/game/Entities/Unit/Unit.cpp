@@ -8512,14 +8512,6 @@ bool Unit::HandleProcTriggerSpell(Unit* victim, uint32 damage, AuraEffect* trigg
                 return false;
             break;
         }
-        // Glyph of Death Grip
-        case 58628:
-        {
-            // remove cooldown of Death Grip
-            if (GetTypeId() == TYPEID_PLAYER)
-                ToPlayer()->RemoveSpellCooldown(49576, true);
-            return true;
-        }
         // Savage Defense
         case 62606:
         {
@@ -15079,9 +15071,6 @@ bool Unit::HandleAuraRaidProcFromCharge(AuraEffect* triggeredByAura)
             break;
         case 59978:            // shiver
             damageSpellId = 59979;
-            break;
-        case 43593:            // Cold Stare
-            damageSpellId = 43594;
             break;
         default:
             TC_LOG_ERROR(LOG_FILTER_UNITS, "Unit::HandleAuraRaidProcFromCharge, received unhandled spell: %u", spellProto->Id);

@@ -2894,8 +2894,6 @@ void SpellMgr::LoadSpellInfoCustomAttributes()
                 break;
             case 26029: // Dark Glare
             case 37433: // Spout
-            case 43140: // Flame Breath
-            case 43215: // Flame Breath
             case 70461: // Coldflame Trap
             case 72133: // Pain and Suffering
             case 73788: // Pain and Suffering
@@ -2913,10 +2911,6 @@ void SpellMgr::LoadSpellInfoCustomAttributes()
             case 26789: // Shard of the Fallen Star
             case 31436: // Malevolent Cleave
             case 35181: // Dive Bomb
-            case 40810: // Saber Lash
-            case 43267: // Saber Lash
-            case 43268: // Saber Lash
-            case 42384: // Brutal Swipe
             case 64688: // Sonic Screech
             case 72373: // Shared Suffering
             case 71904: // Chaos Bane

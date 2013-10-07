@@ -176,10 +176,6 @@ void AddSC_boss_majordomo();
 void AddSC_boss_ragnaros();
 void AddSC_instance_molten_core();
 void AddSC_instance_ragefire_chasm();        //Ragefire Chasm
-void AddSC_the_scarlet_enclave();            //Scarlet Enclave
-void AddSC_the_scarlet_enclave_c1();
-void AddSC_the_scarlet_enclave_c2();
-void AddSC_the_scarlet_enclave_c5();
 void AddSC_boss_arcanist_doan();             //Scarlet Monastery
 void AddSC_boss_azshir_the_sleepless();
 void AddSC_boss_bloodmage_thalnos();
@@ -227,14 +223,6 @@ void AddSC_boss_ironaya();
 void AddSC_uldaman();
 void AddSC_instance_uldaman();
 void AddSC_instance_the_stockade();          //The Stockade
-void AddSC_boss_akilzon();                   //Zul'Aman
-void AddSC_boss_halazzi();
-void AddSC_boss_hex_lord_malacrass();
-void AddSC_boss_janalai();
-void AddSC_boss_nalorakk();
-void AddSC_boss_zuljin();
-void AddSC_instance_zulaman();
-void AddSC_zulaman();
 void AddSC_boss_jeklik();                    //Zul'Gurub
 void AddSC_boss_venoxis();
 void AddSC_boss_marli();
@@ -859,10 +847,6 @@ void AddEasternKingdomsScripts()
     AddSC_boss_ragnaros();
     AddSC_instance_molten_core();
     AddSC_instance_ragefire_chasm();        //Ragefire Chasm
-    AddSC_the_scarlet_enclave();            //Scarlet Enclave
-    AddSC_the_scarlet_enclave_c1();
-    AddSC_the_scarlet_enclave_c2();
-    AddSC_the_scarlet_enclave_c5();
     AddSC_boss_arcanist_doan();             //Scarlet Monastery
     AddSC_boss_azshir_the_sleepless();
     AddSC_boss_bloodmage_thalnos();
@@ -910,14 +894,6 @@ void AddEasternKingdomsScripts()
     AddSC_boss_ironaya();
     AddSC_uldaman();
     AddSC_instance_uldaman();
-    AddSC_boss_akilzon();                   //Zul'Aman
-    AddSC_boss_halazzi();
-    AddSC_boss_hex_lord_malacrass();
-    AddSC_boss_janalai();
-    AddSC_boss_nalorakk();
-    AddSC_boss_zuljin();
-    AddSC_instance_zulaman();
-    AddSC_zulaman();
     AddSC_boss_jeklik();                    //Zul'Gurub
     AddSC_boss_venoxis();
     AddSC_boss_marli();
