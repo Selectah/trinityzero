@@ -144,15 +144,6 @@ set(scripts_STAT_SRCS
   EasternKingdoms/Uldaman/instance_uldaman.cpp
   EasternKingdoms/Uldaman/boss_archaedas.cpp
   EasternKingdoms/zone_swamp_of_sorrows.cpp
-  EasternKingdoms/SunwellPlateau/boss_eredar_twins.cpp
-  EasternKingdoms/SunwellPlateau/boss_kiljaeden.cpp
-  EasternKingdoms/SunwellPlateau/sunwell_plateau.h
-  EasternKingdoms/SunwellPlateau/boss_muru.cpp
-  EasternKingdoms/SunwellPlateau/instance_sunwell_plateau.cpp
-  EasternKingdoms/SunwellPlateau/boss_kalecgos.cpp
-  EasternKingdoms/SunwellPlateau/boss_brutallus.cpp
-  EasternKingdoms/SunwellPlateau/sunwell_plateau.cpp
-  EasternKingdoms/SunwellPlateau/boss_felmyst.cpp
   EasternKingdoms/zone_stranglethorn_vale.cpp
   EasternKingdoms/Deadmines/deadmines.h
   EasternKingdoms/Deadmines/deadmines.cpp

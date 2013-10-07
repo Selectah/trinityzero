@@ -2917,7 +2917,6 @@ void SpellMgr::LoadSpellInfoCustomAttributes()
             case 43267: // Saber Lash
             case 43268: // Saber Lash
             case 42384: // Brutal Swipe
-            case 45150: // Meteor Slash
             case 64688: // Sonic Screech
             case 72373: // Shared Suffering
             case 71904: // Chaos Bane
@@ -3127,9 +3126,6 @@ void SpellMgr::LoadSpellInfoCorrections()
             case 45010:
             case 31347: // Doom
             case 41635: // Prayer of Mending
-            case 44869: // Spectral Blast
-            case 45027: // Revitalize
-            case 45976: // Muru Portal Channel
             case 39365: // Thundering Storm
             case 41071: // Raise Dead (HACK)
             case 52124: // Sky Darkener Assault
@@ -3151,8 +3147,6 @@ void SpellMgr::LoadSpellInfoCorrections()
             case 29576: // Multi-Shot
             case 40816: // Saber Lash
             case 37790: // Spread Shot
-            case 46771: // Flame Sear
-            case 45248: // Shadow Blades
             case 41303: // Soul Drain
             case 54172: // Divine Storm (heal)
             case 29213: // Curse of the Plaguebringer - Noth
@@ -3169,7 +3163,6 @@ void SpellMgr::LoadSpellInfoCorrections()
             case 38296: // Spitfire Totem
             case 37676: // Insidious Whisper
             case 46008: // Negative Energy
-            case 45641: // Fire Bloom
             case 55665: // Life Drain - Sapphiron (H)
             case 28796: // Poison Bolt Volly - Faerlina
                 spellInfo->MaxAffectedTargets = 5;

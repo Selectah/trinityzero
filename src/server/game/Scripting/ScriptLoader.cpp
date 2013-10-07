@@ -222,14 +222,6 @@ void AddSC_instance_stratholme();
 void AddSC_stratholme();
 void AddSC_sunken_temple();                  // Sunken Temple
 void AddSC_instance_sunken_temple();
-void AddSC_instance_sunwell_plateau();       //Sunwell Plateau
-void AddSC_boss_kalecgos();
-void AddSC_boss_brutallus();
-void AddSC_boss_felmyst();
-void AddSC_boss_eredar_twins();
-void AddSC_boss_muru();
-void AddSC_boss_kiljaeden();
-void AddSC_sunwell_plateau();
 void AddSC_boss_archaedas();                 //Uldaman
 void AddSC_boss_ironaya();
 void AddSC_uldaman();
@@ -913,14 +905,6 @@ void AddEasternKingdomsScripts()
     AddSC_stratholme();
     AddSC_sunken_temple();                  // Sunken Temple
     AddSC_instance_sunken_temple();
-    AddSC_instance_sunwell_plateau();       //Sunwell Plateau
-    AddSC_boss_kalecgos();
-    AddSC_boss_brutallus();
-    AddSC_boss_felmyst();
-    AddSC_boss_eredar_twins();
-    AddSC_boss_muru();
-    AddSC_boss_kiljaeden();
-    AddSC_sunwell_plateau();
     AddSC_instance_the_stockade();          //The Stockade
     AddSC_boss_archaedas();                 //Uldaman
     AddSC_boss_ironaya();

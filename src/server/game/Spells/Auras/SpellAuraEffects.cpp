@@ -2318,15 +2318,6 @@ void AuraEffect::HandleAuraModPacifyAndSilence(AuraApplication const* aurApp, ui
 
     Unit* target = aurApp->GetTarget();
 
-    // Vengeance of the Blue Flight (@todo REMOVE THIS!)
-    /// @workaround
-    if (m_spellInfo->Id == 45839)
-    {
-        if (apply)
-            target->SetFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_NON_ATTACKABLE);
-        else
-            target->RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_NON_ATTACKABLE);
-    }
     if (!(apply))
     {
         // do not remove unit flag if there are more than this auraEffect of that kind on unit on unit
@@ -5676,10 +5667,6 @@ void AuraEffect::HandlePeriodicTriggerSpellAuraTick(Unit* target, Unit* caster) 
             // Mana Tide
             case 16191:
                 target->CastCustomSpell(target, triggerSpellId, &m_amount, NULL, NULL, true, NULL, this);
-                return;
-            // Negative Energy Periodic
-            case 46284:
-                target->CastCustomSpell(triggerSpellId, SPELLVALUE_MAX_TARGETS, m_tickNumber / 10 + 1, NULL, true, NULL, this);
                 return;
             // Poison (Grobbulus)
             case 28158:
