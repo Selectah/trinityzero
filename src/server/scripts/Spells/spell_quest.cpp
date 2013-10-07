@@ -1248,11 +1248,9 @@ enum ACleansingSong
 {
     SPELL_SUMMON_SPIRIT_ATAH        = 52954,
     SPELL_SUMMON_SPIRIT_HAKHALAN    = 52958,
-    SPELL_SUMMON_SPIRIT_KOOSU       = 52959,
 
     AREA_BITTERTIDELAKE             = 4385,
     AREA_RIVERSHEART                = 4290,
-    AREA_WINTERGRASPRIVER           = 4388,
 };
 
 class spell_q12735_song_of_cleansing : public SpellScriptLoader
@@ -1274,9 +1272,6 @@ class spell_q12735_song_of_cleansing : public SpellScriptLoader
                         break;
                     case AREA_RIVERSHEART:
                         caster->CastSpell(caster, SPELL_SUMMON_SPIRIT_HAKHALAN);
-                        break;
-                    case AREA_WINTERGRASPRIVER:
-                        caster->CastSpell(caster, SPELL_SUMMON_SPIRIT_KOOSU);
                         break;
                     default:
                         break;

@@ -248,10 +248,8 @@ enum AreaFlags
     AREA_FLAG_TOWN             = 0x00200000,                // small towns with Inn
     AREA_FLAG_UNK7             = 0x00400000,                // Warsong Hold, Acherus: The Ebon Hold, New Agamand Inn, Vengeance Landing Inn, Sunreaver Pavilion (Something to do with team?)
     AREA_FLAG_UNK8             = 0x00800000,                // Valgarde, Acherus: The Ebon Hold, Westguard Inn, Silver Covenant Pavilion (Something to do with team?)
-    AREA_FLAG_WINTERGRASP      = 0x01000000,                // Wintergrasp and it's subzones
     AREA_FLAG_INSIDE           = 0x02000000,                // used for determinating spell related inside/outside questions in Map::IsOutdoors
     AREA_FLAG_OUTSIDE          = 0x04000000,                // used for determinating spell related inside/outside questions in Map::IsOutdoors
-    AREA_FLAG_WINTERGRASP_2    = 0x08000000,                // Can Hearth And Resurrect From Area
     AREA_FLAG_NO_FLY_ZONE      = 0x20000000                 // Marks zones where you cannot fly
 };
 

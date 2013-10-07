@@ -7532,7 +7532,7 @@ void Player::UpdateZone(uint32 newZone, uint32 newArea)
             break;
         case AREATEAM_NONE:
             // overwrite for battlegrounds, maybe batter some zone flags but current known not 100% fit to this
-            pvpInfo.IsInHostileArea = sWorld->IsPvPRealm() || InBattleground() || zone->flags & AREA_FLAG_WINTERGRASP;
+            pvpInfo.IsInHostileArea = sWorld->IsPvPRealm() || InBattleground();
             break;
         default:                                            // 6 in fact
             pvpInfo.IsInHostileArea = false;
@@ -9652,13 +9652,6 @@ void Player::SendInitWorldStates(uint32 zoneid, uint32 areaid)
                 data << uint32(4131) << uint32(0);              // 10 WORLDSTATE_ALGALON_DESPAWN_TIMER
             }
             break;
-        // Wintergrasp
-        case 4197:
-            if (bf && bf->GetTypeId() == BATTLEFIELD_WG)
-            {
-                bf->FillInitialWorldStates(data);
-                break;
-            }
         case 4820:
             if (instance && mapid == 668)
                 instance->FillInitialWorldStates(data);
@@ -9683,7 +9676,6 @@ void Player::SendInitWorldStates(uint32 zoneid, uint32 areaid)
 
     GetSession()->SendPacket(&data);
     SendBGWeekendWorldStates();
-    SendBattlefieldWorldStates();
 }
 
 void Player::SendBGWeekendWorldStates()
@@ -9697,24 +9689,6 @@ void Player::SendBGWeekendWorldStates()
                 SendUpdateWorldState(bl->HolidayWorldStateId, 1);
             else
                 SendUpdateWorldState(bl->HolidayWorldStateId, 0);
-        }
-    }
-}
-
-void Player::SendBattlefieldWorldStates()
-{
-    /// Send misc stuff that needs to be sent on every login, like the battle timers.
-    if (sWorld->getBoolConfig(CONFIG_WINTERGRASP_ENABLE))
-    {
-        if (BattlefieldWG* wg = (BattlefieldWG*)sBattlefieldMgr->GetBattlefieldByBattleId(BATTLEFIELD_BATTLEID_WG))
-        {
-            if (wg->IsWarTime())
-                SendUpdateWorldState(ClockWorldState[1], uint32(time(NULL)));
-            else // Time to next battle
-            {
-                uint32 timer = wg->GetTimer() / 1000;
-                SendUpdateWorldState(ClockWorldState[1], time(NULL) + timer);
-            }
         }
     }
 }
